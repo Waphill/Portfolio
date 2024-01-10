@@ -1,0 +1,86 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+nav {
+  font-weight: 5px;
+}
+
+img {
+  vertical-align: middle;
+  border-style: none;
+}
+
+#img {
+    width: 200px;
+    height: auto;
+    margin: -200px;
+    margin-left: auto;
+}
+
+/* HOMEPAGE START*/
+.hero-section {
+  background: #f8f9fa;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.hero-text {
+  color: #343a40;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+b {
+  color: #000;
+}
+
+span {
+  background-color: black;
+  color: #f8f9fa;
+  border-radius: 15px;
+}
+
+#newsletter {
+  margin-right: 150px;
+}
+
+.carousel-inner img {
+  width: 50px;
+
+}
+
+#services img {
+  width: 50px;
+  margin-left: 15px;
+}
+
+
+/* HOMEPAGE END */
+
+/* CONTACT PAGE START */
+h2 {
+  text-decoration: underline;
+}
+/* CONTACT PAGE END */
+
+/* ABOUT PAGE START */
+
+/* ABOUT PAGE END */
+
+/* PROJECTS PAGE START */
+#portfolio img {
+  width: 800px;
+  height: 400px;
+}
+/* PROJECTS PAGE END */

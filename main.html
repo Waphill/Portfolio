@@ -62,10 +62,10 @@
                     <h1 class="hero-text"><b>Transforming Ideas into Digital Reality: Your Vision, Our
                             Expertise.</b></h1><br><br>
 
-                    <h6 class="display-6"><em>Welcome to <b>Wa</b><span>phill's</span> Software Development Hub.</em>
+                    <h6 class="display-6"><em>Welcome to <b>wa</b><span>phill's</span> Software Development Hub.</em>
                     </h6>
                     <p class="lead mt-4">Crafting innovative solutions to bring your ideas to life.</p>
-                    <a class="btn btn-primary btn-lg mt-3" href="#services">Explore Services</a>
+                    <a class="btn btn-dark btn-lg mt-3" id="hero-btn" href="#packages">Explore Packages</a>
                 </div>
             </div>
         </div>
@@ -162,7 +162,7 @@
                                     <p class="card-text">Description of Project 1. Lorem ipsum dolor sit amet,
                                         consectetur adipiscing elit.</p> 
                                     <a href="https://github.com/your-username/project1" target="_blank"
-                                        class="btn btn-primary"><i class="bi bi-github"></i> GitHub</a>
+                                        class="btn btn-dark"><i class="bi bi-github"></i> GitHub</a>
                                     <a href="#" class="btn btn-success"><i class="bi bi-link-45deg"></i> Live Demo</a>
                                 </div>
                             </div>
@@ -182,7 +182,7 @@
                                     <p class="card-text">Description of Project 2. Lorem ipsum dolor sit amet,
                                         consectetur adipiscing elit.</p>
                                     <a href="https://github.com/your-username/project2" target="_blank"
-                                        class="btn btn-primary"><i class="bi bi-github"></i> GitHub</a>
+                                        class="btn btn-dark"><i class="bi bi-github"></i> GitHub</a>
                                     <a href="#" class="btn btn-success"><i class="bi bi-link-45deg"></i> Live Demo</a>
                                 </div>
                             </div>
@@ -212,47 +212,59 @@
                 <!-- Package Cards -->
                 <div class="col-md-4 mb-4">
                     <div class="card h-100">
+                        <img src="./assets/images/code.jpg" class="card-img-top" alt="Integration Services">
                         <div class="card-body">
-                            <h5 class="card-title">Basic Package</h5>
+                            <h5 class="card-title package-heading">Basic Package</h5>
                             <p class="card-text">Ideal for small businesses or individuals looking for a simple online
                                 presence.</p>
                             <ul class="list-group list-group-flush">
-                                <li class="list-group-item">Basic website with essential features</li>
+                                <li class="list-group-item">Basic responsive website with essential features e.g SEO, basic security, 
+                                    Call To Action, Social Media Integration</li>
                                 <li class="list-group-item">Standard template design</li>
-                                <li class="list-group-item">Starting at $X,XXX</li>
+                                <li class="list-group-item">Starting at <span id="price">$120</span></li>
                             </ul>
-                            <a href="#" class="btn btn-primary mt-3">Get Started</a>
+
+                            <div class="card-body text-center">
+                                <a href="#" class="btn btn-primary mt-3 ">Get Started</a>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-4 mb-4">
                     <div class="card h-100">
+                        <img src="./assets/images/code.jpg" class="card-img-top" alt="Integration Services">
                         <div class="card-body">
-                            <h5 class="card-title">Standard Package</h5>
+                            <h5 class="card-title package-heading">Standard Package <span class="badge bg-warning text-dark"><small>Popular</small></span></h5>
+                            
                             <p class="card-text">Suitable for businesses seeking a more customized online presence.</p>
                             <ul class="list-group list-group-flush">
-                                <li class="list-group-item">Responsive website with additional features</li>
+                                <li class="list-group-item">Responsive website with additional features e.g blog, FAQ section, Social Media Feeds, User accounts</li>
                                 <li class="list-group-item">Customized design to match brand identity</li>
-                                <li class="list-group-item">Starting at $X,XXX</li>
+                                <li class="list-group-item">Starting at <span id="price">$200</span></li>
                             </ul>
-                            <a href="#" class="btn btn-primary mt-3">Get Started</a>
+                            <div class="card-body text-center">
+                                <a href="#" class="btn btn-primary mt-3 ">Get Started</a>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-4 mb-4">
                     <div class="card h-100">
+                        <img src="./assets/images/code.jpg" class="card-img-top" alt="Integration Services">
                         <div class="card-body">
-                            <h5 class="card-title">Premium Package</h5>
+                            <h5 class="card-title package-heading">Premium Package</h5>
                             <p class="card-text">Tailored for businesses looking for advanced functionality.</p>
                             <ul class="list-group list-group-flush">
                                 <li class="list-group-item">Fully customized website with advanced features</li>
                                 <li class="list-group-item">E-commerce integration, user authentication, etc.</li>
                                 <li class="list-group-item">Dedicated project manager and priority support</li>
-                                <li class="list-group-item">Starting at $X,XXX</li>
+                                <li class="list-group-item">Starting at <span id="price">$350</span></li>
                             </ul>
-                            <a href="#" class="btn btn-primary mt-3">Get Started</a>
+                            <div class="card-body text-center">
+                                <a href="#" class="btn btn-primary mt-3 ">Get Started</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -260,6 +272,9 @@
         </div>
     </section>
     <!--Packages/Pricing Cards section end-->
+
+    
+
 
     <!--Testimonials section start-->
     <section id="testimonials" class="py-5">

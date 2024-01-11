@@ -42,6 +42,15 @@ img {
   border-color: #007bff;
 }
 
+.btn-secondary {
+  background-color: #484747;
+  border-color: #484747;
+}
+
+.badge {
+  padding: 2px;
+  background-color: rgb(104, 223, 104);
+}
 
 b {
   color: #000;
@@ -75,6 +84,11 @@ span {
   color: black;
   font-weight: bold;
   background-color: #fff;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+  transition: box-shadow 0.3s ease-in-out; 
 }
 
 /* HOMEPAGE END */

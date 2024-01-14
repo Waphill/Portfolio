@@ -108,12 +108,13 @@ span {
 
 
 /* Style for active button */
-#webServicesBtn.active {
+#webServicesBtn {
   background-color: lightgray;
   color: #000; /* Change the text color to black or any color of your choice */
 }
 
-#appServicesBtnApp.active {
+
+#appServicesBtnApp {
   background-color: lightgray;
   color: #000; /* Change the text color to black or any color of your choice */
 }
@@ -142,11 +143,19 @@ footer a:hover {
 }
 
 
-/* HOMEPAGE END */
 
-/* CONTACT PAGE START */
+/* HOMEPAGE END */
 h2 {
   color: black;
+  text-decoration: underline;
+}
+
+/* CONTACT PAGE START */
+#contact-me a {
+  text-decoration: none;
+}
+
+#contact-me a:hover {
   text-decoration: underline;
 }
 /* CONTACT PAGE END */

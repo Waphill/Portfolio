@@ -68,14 +68,23 @@
                     <form action="#" method="post">
                         <div class="mb-3">
                             <label for="package" class="form-label">Package:</label>
-                            <input type="text" class="form-control" id="plan" name="plan" disabled readonly>
+                            <input type="text" class="form-control" id="plan" name="plan"
+                                placeholder="Please pick a package in the homepage" disabled readonly>
+                        </div>
+                        <label for="priceplan" class="form-label">Price:</label>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">$</span>
+                            <input type="text" class="form-control" id="priceplan" name="priceplan"
+                                placeholder="Please pick a package in the homepage"
+                                aria-label="Amount (to the nearest dollar)" disabled readonly>
+                            <span class="input-group-text">.00</span>
                         </div>
                         <div class="mb-3">
-                            <label for="name" >Enter your name:</label>
+                            <label for="name">Enter your name:</label>
                             <input type="text" class="form-control" id="name" name="name" required>
                         </div>
                         <div class="mb-3">
-                            <label for="email" >Enter your email:</label>
+                            <label for="email">Enter your email:</label>
                             <input type="email" class="form-control" id="email" name="email" required>
                         </div>
                         <div class="mb-3">
@@ -105,7 +114,7 @@
                                 We look forward to working with you!</b></em></p>
                     <!-- Add more forms as needed -->
                 </div>
-                <div class="col-lg-6 border shadow rounded-2">
+                <div class="col-lg-6 border shadow rounded-2" id="contact-me">
                     <!-- Other Contact Options -->
                     <h2 class="mb-4">Other Ways to Contact Me</h2>
                     <ul class="list-unstyled">
@@ -118,8 +127,7 @@
                         </li>
                         <li class="mb-3">
                             <i class="bi bi-linkedin"></i> LinkedIn: <a
-                                href="https://www.linkedin.com/in/wangu-phillip/" target="_blank">Your LinkedIn
-                                Profile</a>
+                                href="https://www.linkedin.com/in/wangu-phillip/" target="_blank">Wangu Phillip</a>
                         </li>
                     </ul>
 
@@ -196,10 +204,15 @@
             // Get the value from the URL parameter
             const urlParams = new URLSearchParams(window.location.search);
             const name = urlParams.get('plan');
+            const price = urlParams.get('priceplan');
 
             // Fill the form field if the value is present
             if (name) {
                 document.getElementById('plan').value = name;
+            }
+
+            if (price) {
+                document.getElementById('priceplan').value = price;
             }
         });
     </script>

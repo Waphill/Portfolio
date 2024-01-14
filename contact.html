@@ -68,36 +68,38 @@
                     <form action="#" method="post" name="submit-to-google-sheet">
                         <div class="mb-3">
                             <label for="package" class="form-label">Package:</label>
-                            <input type="text" class="form-control" id="plan" name="plan"
-                                placeholder="Please pick a package in the homepage" disabled readonly>
+                            <input type="text" class="form-control" id="Plan" name="Plan"
+                                placeholder="Please pick a package in the homepage"  readonly>
                         </div>
-                        <label for="priceplan" class="form-label">Price:</label>
+                        <label for="PricePlan" class="form-label">Price:</label>
                         <div class="input-group mb-3">
                             <span class="input-group-text">$</span>
-                            <input type="text" class="form-control" id="priceplan" name="priceplan"
+                            <input type="text" class="form-control" id="PricePlan" name="PricePlan"
                                 placeholder="Please pick a package in the homepage"
-                                aria-label="Amount (to the nearest dollar)" disabled readonly>
+                                aria-label="Amount (to the nearest dollar)"  readonly>
                             <span class="input-group-text">.00</span>
                         </div>
                         <div class="mb-3">
-                            <label for="name">Enter your name:</label>
-                            <input type="text" class="form-control" id="name" name="name" required>
+                            <label for="Name">Enter your name:</label>
+                            <input type="text" class="form-control" id="Name" name="Name" required>
                         </div>
                         <div class="mb-3">
-                            <label for="email">Enter your email:</label>
-                            <input type="email" class="form-control" id="email" name="email" required>
+                            <label for="Email">Enter your email:</label>
+                            <input type="email" class="form-control" id="Email" name="Email" required>
                         </div>
                         <div class="mb-3">
-                            <label for="meetingDateTime" class="form-label">Select Date and Time:</label>
-                            <input type="datetime-local" id="meetingDateTime" name="meetingDateTime"
+                            <label for="MeetingDateTime" class="form-label">Select Date and Time:</label>
+                            <input type="datetime-local" id="MeetingDateTime" name="MeetingDateTime"
                                 class="form-control" required>
                         </div>
                         <div class="mb-3">
-                            <label for="message" class="form-label">Your Message</label>
-                            <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                            <label for="Message" class="form-label">Your Message</label>
+                            <textarea class="form-control" id="Message" name="Message" rows="4" required></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary">Submit</button>
                     </form>
+
+                    <span id="msg"></span>
 
                     <!-- Add contract forms download links -->
                     <p class="mt-4">You can also download and fill out the required contract forms:</p>
@@ -203,16 +205,16 @@
         document.addEventListener('DOMContentLoaded', function () {
             // Get the value from the URL parameter
             const urlParams = new URLSearchParams(window.location.search);
-            const name = urlParams.get('plan');
-            const price = urlParams.get('priceplan');
+            const name = urlParams.get('Plan');
+            const price = urlParams.get('PricePlan');
 
             // Fill the form field if the value is present
             if (name) {
-                document.getElementById('plan').value = name;
+                document.getElementById('Plan').value = name;
             }
 
             if (price) {
-                document.getElementById('priceplan').value = price;
+                document.getElementById('PricePlan').value = price;
             }
         });
     </script>
@@ -220,11 +222,18 @@
     <script>
         const scriptURL = 'https://script.google.com/macros/s/AKfycbypIpleja7kvGuQvPVEEACj54Ex5Q7QvlXrq4pKbwiaDsC4XtgJmp7NGVYLkXF_wQ7P/exec'
         const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
 
         form.addEventListener('submit', e => {
             e.preventDefault()
             fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-                .then(response => console.log('Success!', response))
+                .then(response => {
+                    msg.innerHTML = "Submitted (^_-)"
+                    setTimeout(function() {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
                 .catch(error => console.error('Error!', error.message))
         })
     </script>

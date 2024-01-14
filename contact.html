@@ -69,14 +69,14 @@
                         <div class="mb-3">
                             <label for="package" class="form-label">Package:</label>
                             <input type="text" class="form-control" id="Plan" name="Plan"
-                                placeholder="Please pick a package in the homepage"  readonly>
+                                placeholder="Please pick a package in the homepage" readonly>
                         </div>
                         <label for="PricePlan" class="form-label">Price:</label>
                         <div class="input-group mb-3">
                             <span class="input-group-text">$</span>
                             <input type="text" class="form-control" id="PricePlan" name="PricePlan"
                                 placeholder="Please pick a package in the homepage"
-                                aria-label="Amount (to the nearest dollar)"  readonly>
+                                aria-label="Amount (to the nearest dollar)" readonly>
                             <span class="input-group-text">.00</span>
                         </div>
                         <div class="mb-3">
@@ -106,10 +106,11 @@
 
                     <!-- Download Contract Forms -->
                     <div class="d-grid gap-2 col-6 mx-auto mb-3">
-                        <a href="contract_form_website.docx" download class="btn btn-success btn-sm">Download Website
-                            Contract Form</a>
-                        <a href="contract_form_app.docx" download class="btn btn-success btn-sm">Download App Contract
-                            Form</a>
+                        <a href="./assets/contracts/web_contract.pdf" download class="btn btn-success btn-sm">Download
+                            Website
+                            Contract</a>
+                        <a href="./assets/contracts/app_contract.pdf" download class="btn btn-success btn-sm">Download
+                            App Contract</a>
                     </div>
 
                     <p><em><b>After completing the forms, email them to us before the scheduled meeting.
@@ -229,7 +230,7 @@
             fetch(scriptURL, { method: 'POST', body: new FormData(form) })
                 .then(response => {
                     msg.innerHTML = "Submitted (^_-)"
-                    setTimeout(function() {
+                    setTimeout(function () {
                         msg.innerHTML = ""
                     }, 5000)
                     form.reset()

@@ -65,7 +65,7 @@
                 <div class="col-lg-5 border shadow rounded-2 me-2 ms-5">
                     <!-- Contact Form -->
                     <h2 class="mb-4">Get In Touch</h2>
-                    <form action="#" method="post">
+                    <form action="#" method="post" name="submit-to-google-sheet">
                         <div class="mb-3">
                             <label for="package" class="form-label">Package:</label>
                             <input type="text" class="form-control" id="plan" name="plan"
@@ -215,6 +215,18 @@
                 document.getElementById('priceplan').value = price;
             }
         });
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbypIpleja7kvGuQvPVEEACj54Ex5Q7QvlXrq4pKbwiaDsC4XtgJmp7NGVYLkXF_wQ7P/exec'
+        const form = document.forms['submit-to-google-sheet']
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => console.log('Success!', response))
+                .catch(error => console.error('Error!', error.message))
+        })
     </script>
 
 </body>

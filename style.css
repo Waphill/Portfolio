@@ -14,16 +14,12 @@ nav {
   font-weight: 5px;
 }
 
-img {
-  vertical-align: middle;
-  border-style: none;
-}
-
-#img {
+#nav-logo {
     width: 200px;
     height: auto;
     margin: -200px;
     margin-left: auto;
+    
 }
 
 /* HOMEPAGE START*/
@@ -125,6 +121,7 @@ span {
   font-size: xx-large;
   font-weight: bold;
   background-color: #fff;
+
 }
 
 
@@ -174,8 +171,5 @@ h2 {
 /* ABOUT PAGE END */
 
 /* PROJECTS PAGE START */
-#portfolio img {
-  width: 800px;
-  height: 400px;
-}
+
 /* PROJECTS PAGE END */

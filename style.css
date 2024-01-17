@@ -124,12 +124,22 @@ span {
 
 }
 
+#portfolio2 h5 {
+  font-weight: bold;
+}
+
 
 .card:hover {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
   transition: box-shadow 0.3s ease-in-out; 
   transition: all 0.3s;
   transform: scale(1.02);
+}
+
+.card-img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 

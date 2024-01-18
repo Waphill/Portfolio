@@ -152,23 +152,30 @@
             <div class="row">
                 <!-- Project Cards -->
                 <div class="col-md-6 mb-4">
-                    <div class="card rounded-2">
+                    <div class="card  h-100 rounded-2">
                         <div class="row g-0">
                             <div class="col-md-6">
-                                <img src="./assets/images/projects/Ecommerce_App.png" class="card-img"
-                                    alt="Project 1">
+                                <!-- Image container with ribbon -->
+                        
+                        <img src="./assets/images/projects/Ecommerce_App.png" class="card-img" alt="Project 1">
                             </div>
                             <div class="col-md-6">
+                                <div class="position-relative">
+                                    <!-- Add the ribbon -->
+                                    <div class="ribbon">
+                                        <span>Latest</span>
+                                    </div>
+                                    <!-- Image -->
+                                </div>
                                 <div class="card-body">
                                     <h5 class="card-title">Ecommerce App</h5>
-                                    <p class="card-text">Description of Project 1. Lorem ipsum dolor sit amet,
-                                        consectetur adipiscing elit. Lorem ipsum dolor sit amet consectetur adipisicing
-                                        elit. Libero quae aperiam nostrum, delectus omnis non autem nam voluptatibus
-                                        facilis repellendus nobis, ipsa nulla tempora ad, quos dolore inventore ea
-                                        architecto.</p>
-                                    <a href="https://github.com/Waphill" target="_blank" class="btn btn-dark"><i
+                                    <p class="card-text">E-commerce app designed <br>exclusively for shoe enthusiasts! <br>
+                                        <br> <br> <br> <br>
+                                        <strong>Technologies Used:</strong> Flutter, Firebase
+                                    </p>
+                                    <a href="https://github.com/Waphill" target="_blank" class="btn btn-dark disabled"><i
                                             class="bi bi-github"></i> GitHub</a>
-                                    <a href="#" class="btn btn-success"><i class="bi bi-link-45deg"></i> Live Demo</a>
+                                    <a href="#" class="btn btn-success disabled"><i class="bi bi-link-45deg"></i> Live Demo</a>
                                 </div>
                             </div>
                         </div>
@@ -176,22 +183,21 @@
                 </div>
 
                 <div class="col-md-6 mb-4">
-                    <div class="card rounded-2">
+                    <div class="card  h-100 rounded-2">
                         <div class="row g-0">
                             <div class="col-md-6">
                                 <img src="./assets/images/projects/Desktop3.png" class="card-img" alt="Project 2">
                             </div>
                             <div class="col-md-6">
                                 <div class="card-body">
-                                    <h5 class="card-title">Project 2</h5>
-                                    <p class="card-text">Description of Project 1. Lorem ipsum dolor sit amet,
-                                        consectetur adipiscing elit. Lorem ipsum dolor sit amet consectetur adipisicing
-                                        elit. Libero quae aperiam nostrum, delectus omnis non autem nam voluptatibus
-                                        facilis repellendus nobis, ipsa nulla tempora ad, quos dolore inventore ea
-                                        architecto.</p>
+                                    <h5 class="card-title">University of Botswana Internship Management System</h5>
+                                    <p class="card-text">A comprehensive web application designed for efficiently
+                                        managing intern programs for University of Botswana. <br> <br>
+                                        <strong>Technologies
+                                            Used:</strong> Flutter, Firebase</p>
                                     <a href="https://github.com/Waphill" target="_blank" class="btn btn-dark"><i
                                             class="bi bi-github"></i> GitHub</a>
-                                    <a href="#" class="btn btn-success"><i class="bi bi-link-45deg"></i> Live Demo</a>
+                                    <a href="#" class="btn btn-success disabled"><i class="bi bi-link-45deg"></i> Live Demo</a>
                                 </div>
                             </div>
                         </div>
@@ -269,11 +275,15 @@
 
                 <div class="col-md-4 mb-4">
                     <div class="card h-100 price-card shadow">
+                        <div class="position-relative">
+                            <div class="ribbon">
+                                <span>Popular</span>
+                            </div>
+                        </div>
                         <img src="./assets/images/coin.png" class="card-img-top mx-auto" alt="Integration Services"
                             style="width: 50px;">
                         <div class="card-body">
-                            <h5 class="card-title package-heading text-center">Standard Plan<span
-                                    class="badge text-dark ms-1"><small>Popular</small></span></h5>
+                            <h5 class="card-title package-heading text-center">Standard Plan</h5>
                             <h6 class="card-title text-center">Business Website</h6>
                             <p class="card-text mt-2">Suitable for businesses seeking a more customized online presence.
                             </p>
@@ -426,11 +436,15 @@
 
                 <div class="col-md-4 mb-4">
                     <div class="card h-100 price-card shadow">
+                        <div class="position-relative">
+                            <div class="ribbon">
+                                <span>Popular</span>
+                            </div>
+                        </div>
                         <img src="./assets/images/gemstone.png" class="card-img-top mx-auto" alt="Integration Services"
                             style="width: 50px;">
                         <div class="card-body">
-                            <h5 class="card-title package-heading text-center">Premium Plan<span
-                                    class="badge text-dark ms-1"><small>Popular</small></span></h5>
+                            <h5 class="card-title package-heading text-center">Premium Plan</h5>
                             <h6 class="card-title text-center">E-commerce App</h6>
                             <p class="card-text mt-2">Tailored for businesses looking for advanced functionality.</p>
                             <ul class="list-group list-group-flush">
@@ -498,7 +512,8 @@
                             <p class="lead">"Thanks to phillip, my book launch was a success! The website he <br>
                                 created was not only visually appealing but also made it easy for readers to purchase.
                                 <br>
-                                Highly recommend for a seamless and effective book launch."</p>
+                                Highly recommend for a seamless and effective book launch."
+                            </p>
                             <p class="font-weight-bold">Kaelo Disang</p>
                         </div>
                     </div>
@@ -550,7 +565,8 @@
                 <div class="col-md-2">
                     <h4>Follow Us</h4>
                     <ul class="list-unstyled" id="follow-us">
-                        <li><a href="https://www.facebook.com/profile.php?id=100088723290965&mibextid=ZbWKwL" class="text-light"><i class="bi bi-facebook"></i> Facebook</a></li>
+                        <li><a href="https://www.facebook.com/profile.php?id=100088723290965&mibextid=ZbWKwL"
+                                class="text-light"><i class="bi bi-facebook"></i> Facebook</a></li>
                         <li><a href="#" class="text-light"><i class="bi bi-twitter"></i> Twitter</a></li>
                         <li><a href="https://www.linkedin.com/in/wangu-phillip/" class="text-light"><i
                                     class="bi bi-linkedin"></i> LinkedIn</a></li>

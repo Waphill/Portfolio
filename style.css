@@ -151,6 +151,49 @@ footer a:hover {
   text-decoration: underline;
 }
 
+/* Ribbon Styles */
+.ribbon {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  overflow: hidden;
+}
+
+.ribbon span {
+  width: 240px;
+  padding: 15px 0px;
+  background: #79ea62;
+  display: block;
+  position: absolute;
+  top: 30px;
+  left: -25px;
+  transform: rotate(45deg);
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.ribbon:after, .ribbon:before {
+  content: '';
+  border-top: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #23b606;
+  border-left: 5px solid #23b606;
+  position: absolute;
+}
+
+.ribbon:before {
+  bottom: 0;
+  right: 0;
+}
+
+.ribbon:after {
+  top: 0;
+  left: 0;
+}
 
 
 /* HOMEPAGE END */

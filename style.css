@@ -226,3 +226,47 @@ h2 {
 /* PROJECTS PAGE START */
 
 /* PROJECTS PAGE END */
+
+
+/* Medium Devices e.g ipad */
+@media (max-width:799px) {
+ 
+  #services-card {
+    width: 200px;
+    height: 90px;
+}
+
+.card-title {
+  margin-top: -5px;
+  font-size: 1rem;
+}
+
+#services .card-text {
+  display: none; /* Hide the card text on medium devices */
+}
+
+#portfolio2 .card-text {
+  display: none; /* Hide the card text on medium devices */
+}
+
+#Ecommerce_App {
+  margin-bottom: 50px;
+}
+
+
+#services img {
+  width: 25px;
+  margin-left: 10px;
+  margin-top: 4px;
+}
+
+}
+
+/* Small Devices e.g phones */
+@media (max-width:477px) {
+
+  
+
+
+}
+

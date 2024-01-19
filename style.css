@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -15,11 +14,11 @@ nav {
 }
 
 #nav-logo {
-    width: 200px;
-    height: auto;
-    margin: -200px;
-    margin-left: auto;
-    
+  width: 200px;
+  height: auto;
+  margin: -200px;
+  margin-left: auto;
+
 }
 
 /* HOMEPAGE START*/
@@ -39,9 +38,12 @@ nav {
   padding: 100px 0;
   text-align: center;
   background-image: url("./assets/images/hero/emile-perron.jpg");
-  background-size: cover; /* Ensures the image covers the entire section */
-  background-position: center; /* Centers the image within the section */
-  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-size: cover;
+  /* Ensures the image covers the entire section */
+  background-position: center;
+  /* Centers the image within the section */
+  background-repeat: no-repeat;
+  /* Prevents the image from repeating */
 }
 
 .hero-text {
@@ -107,13 +109,15 @@ span {
 /* Style for active button */
 #webServicesBtn {
   background-color: lightgray;
-  color: #000; /* Change the text color to black or any color of your choice */
+  color: #000;
+  /* Change the text color to black or any color of your choice */
 }
 
 
 #appServicesBtnApp {
   background-color: lightgray;
-  color: #000; /* Change the text color to black or any color of your choice */
+  color: #000;
+  /* Change the text color to black or any color of your choice */
 }
 
 #price {
@@ -130,8 +134,8 @@ span {
 
 
 .card:hover {
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
-  transition: box-shadow 0.3s ease-in-out; 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease-in-out;
   transition: all 0.3s;
   transform: scale(1.02);
 }
@@ -176,7 +180,8 @@ footer a:hover {
   font-weight: bold;
 }
 
-.ribbon:after, .ribbon:before {
+.ribbon:after,
+.ribbon:before {
   content: '';
   border-top: 5px solid transparent;
   border-right: 5px solid transparent;
@@ -217,6 +222,7 @@ h2 {
   margin-top: 5px;
   display: block;
 }
+
 /* CONTACT PAGE END */
 
 /* ABOUT PAGE START */
@@ -230,34 +236,82 @@ h2 {
 
 /* Medium Devices e.g ipad */
 @media (max-width:799px) {
- 
+
   #services-card {
     width: 200px;
     height: 90px;
+  }
+
+  .card-title {
+    margin-top: -5px;
+    font-size: 1rem;
+  }
+
+  #services .card-text {
+    display: none;
+    /* Hide the card text on medium devices */
+  }
+
+  #portfolio2 .card-text {
+    display: none;
+    /* Hide the card text on medium devices */
+  }
+
+  #portfolio2 .btn-dark, .btn-success {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 5px;
+  }
+
+  #Ecommerce_App {
+    margin-bottom: 50px;
+  }
+
+  #services img {
+    width: 25px;
+    margin-left: 10px;
+    margin-top: 4px;
+  }
+
+  #packages p {
+    font-size: 14px;
+  }
+
+  #basic-plan {
+    margin-top: 55px !important;
+  }
+
+  #enterprise-plan {
+    margin-top: 70px !important;
+  }
+
+  #app-basic-plan {
+    margin-top: 190px !important;
+  }
+
+  #app-standrad-plan {
+    margin-top: 145px !important;
+  }
+
+  #price {
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: #fff;
 }
 
-.card-title {
-  margin-top: -5px;
-  font-size: 1rem;
+#newsletter {
+  margin-right: 50px;
 }
 
-#services .card-text {
-  display: none; /* Hide the card text on medium devices */
+#testimonials .container {
+  margin-bottom: 1px !important;
 }
 
-#portfolio2 .card-text {
-  display: none; /* Hide the card text on medium devices */
-}
-
-#Ecommerce_App {
-  margin-bottom: 50px;
-}
-
-
-#services img {
-  width: 25px;
-  margin-left: 10px;
-  margin-top: 4px;
+footer input {
+  width: 80px !important;
+  margin-bottom: 8px;
+  border-radius: 5px !important;
 }
 
 }
@@ -265,8 +319,62 @@ h2 {
 /* Small Devices e.g phones */
 @media (max-width:477px) {
 
-  
+  .hero-section {
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    padding: 100px 0;
+    text-align: center;
+    background-image: url("./assets/images/hero/arnold-francisca.jpg");
+    background-size: cover;
+    /* Ensures the image covers the entire section */
+    background-position: center;
+    /* Centers the image within the section */
+    background-repeat: no-repeat;
+    /* Prevents the image from repeating */
+  }
 
-
+  #services-card {
+    margin: 5px;
+    width: 150px;
+    height: 100px;
 }
 
+#testimonials {
+  margin: 2 !important;
+  padding: 10px !important;
+  width: 100%;
+  height: 100%;
+}
+
+#testimonials p {
+  font-size: 12px;
+}
+
+footer h4 {
+  font-size: large;
+}
+
+footer p {
+  font-size: 12px;
+}
+
+footer a {
+  font-size: 12px;
+}
+
+footer .text-center {
+  font-size: 12px;
+}
+
+footer input {
+  border-radius: 5px 0 0 5px !important;
+  margin-bottom: 15px;
+}
+
+#subscribeBtn {
+  height: 100%;
+  border-radius: 0 5px 5px 0 !important;
+}
+
+}

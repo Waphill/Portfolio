@@ -237,6 +237,7 @@ h2 {
 /* Medium Devices e.g ipad */
 @media (max-width:799px) {
 
+  /* HOMEPAGE START */
   #services-card {
     width: 200px;
     height: 90px;
@@ -257,7 +258,8 @@ h2 {
     /* Hide the card text on medium devices */
   }
 
-  #portfolio2 .btn-dark, .btn-success {
+  #portfolio2 .btn-dark,
+  .btn-success {
     width: 100%;
     height: 100%;
     margin-bottom: 5px;
@@ -298,26 +300,51 @@ h2 {
     font-size: 25px;
     font-weight: bold;
     background-color: #fff;
-}
+  }
 
-#newsletter {
-  margin-right: 50px;
-}
+  #newsletter {
+    margin-right: 50px;
+  }
 
-#testimonials .container {
-  margin-bottom: 1px !important;
-}
+  #testimonials .container {
+    margin-bottom: 1px !important;
+  }
 
-footer input {
-  width: 80px !important;
-  margin-bottom: 8px;
-  border-radius: 5px !important;
-}
+  footer input {
+    width: 80px !important;
+    margin-bottom: 8px;
+    border-radius: 5px !important;
+  }
+
+  /* HOMEPAGE END */
+
+  /* PROJECTS PAGE START */
+  #portfolio .btn-dark,
+  .btn-success {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 5px;
+  }
+
+  #portfolio p {
+    font-size: 18px;
+  }
+  /* PROJECTS PAGE END */
+
+  /* CONTACT PAGE START */
+  #form {
+    margin-left: 0 !important;
+    margin-bottom: 15px;
+  }
+  /* CONTACT PAGE END */
+
 
 }
 
 /* Small Devices e.g phones */
 @media (max-width:477px) {
+
+  /* HOMEPAGE START */
 
   .hero-section {
     color: #fff;
@@ -325,7 +352,7 @@ footer input {
     height: 100%;
     padding: 100px 0;
     text-align: center;
-    background-image: url("./assets/images/hero/arnold-francisca.jpg");
+    background-image: url("./assets/images/hero/oskar-yildiz.jpg");
     background-size: cover;
     /* Ensures the image covers the entire section */
     background-position: center;
@@ -338,43 +365,59 @@ footer input {
     margin: 5px;
     width: 150px;
     height: 100px;
-}
+  }
 
-#testimonials {
-  margin: 2 !important;
-  padding: 10px !important;
-  width: 100%;
-  height: 100%;
-}
+  #testimonials {
+    margin: 2 !important;
+    padding: 10px !important;
+    width: 100%;
+    height: 100%;
+  }
 
-#testimonials p {
-  font-size: 12px;
-}
+  #testimonials p {
+    font-size: 12px;
+  }
 
-footer h4 {
-  font-size: large;
-}
+  footer h4 {
+    font-size: large;
+  }
 
-footer p {
-  font-size: 12px;
-}
+  footer p,
+  footer a,
+  footer .text-center {
+    font-size: 12px;
+  }
 
-footer a {
-  font-size: 12px;
-}
+  footer input {
+    border-radius: 5px 0 0 5px !important;
+    margin-bottom: 15px;
+  }
 
-footer .text-center {
-  font-size: 12px;
-}
+  #subscribeBtn {
+    height: 100%;
+    border-radius: 0 5px 5px 0 !important;
+  }
 
-footer input {
-  border-radius: 5px 0 0 5px !important;
-  margin-bottom: 15px;
-}
+  /* HOMEPAGE END */
 
-#subscribeBtn {
-  height: 100%;
-  border-radius: 0 5px 5px 0 !important;
-}
+  /* PROJECTS PAGE START */
+  #portfolio p {
+    font-size: 18px;
+  }
+
+  #portfolio img {
+    margin-bottom: 10px;
+  }
+  /* PROJECTS PAGE END */
+
+  /* CONTACT PAGE START */
+  #PricePlan {
+    font-size: 12px;
+  }
+
+  #Plan {
+    font-size: 12px;
+  }
+  /* CONTACT PAGE END */
 
 }
